@@ -1,0 +1,172 @@
+@media only screen and (max-width: 2560px) {
+
+}
+
+
+@media only screen and (max-width: 1440px) {
+
+}
+
+/* Small tablet to big tablet: from 768px to 1023px */
+@media only screen and (max-width: 1024px) {
+ 
+}
+
+@media only screen and (max-width: 1000px){
+
+
+}
+
+/* Small phones to small tablets: from 481px to 767px */
+@media only screen and (max-width: 767px){
+	header {
+		height: 40px;
+		text-align: right;
+	}
+	h3 {
+    font-size: 33px;
+	}
+	hr.header-split{
+		display:none;
+	}
+	header #logo {
+		display:none;
+	}
+	section.info {
+		height:100vh;
+	}
+	section.info p {
+    font-size: 15px;
+  }
+  section.info .text-group {
+    padding: 31% 15%;
+	}
+	/*---- GRID ---*/
+	.grid-container-of-2 {
+		grid-template-columns: 100%;
+	}
+
+	.grid-container-of-2-portifolio {
+		grid-template-columns: 100%;
+		padding: unset;
+	}
+
+	.grid-container-of-3 {
+		grid-template-columns: 100%;
+		padding: 0% 5%;
+	}
+	.left-btn,
+	.right-btn {
+		font-size: 17px;
+    padding: 15px 15px;
+	}
+	section.resume h1 {
+    font-size: 140%;
+  }
+  section.resume h2 {
+		font-size: 125%; 
+	}
+	section.resume .content {
+    padding: 0% 8%;
+	}
+	section.resume .object {
+    height: 75vh;
+	}
+	section.resume .cell-4 {
+		
+	}
+	section.resume #resume-btn {
+    font-size: 18px;
+	}
+	section.resume .link {
+		word-break: break-word;
+	}
+	h1#download {
+		margin-top: 33%;
+	}
+	section.portifolio h2 {
+		font-size: 17px;
+	}
+	section.portifolio p {
+		font-size: 15px;
+	}
+	section.contact .social-links li {
+	  font-size: 25px;
+	}
+	.submitbtn {
+	  width: 58%;
+	}
+
+/* mobile nav */
+	.grid-header-of-2 {
+		grid-template-columns: 90% 10%;
+		display: grid;
+	}
+
+  .mobile-nav-icon {
+  	display: inline-block;
+  }
+  .main-nav { 
+    margin-top: 40px;
+    margin-left: 25px;
+    height: 0;
+    display: none;
+    opacity: 0;
+    overflow: hidden;
+    transition: height 350ms ease-in, opacity 750ms ease-in-out;
+  }
+
+  .main-nav.is-visible {
+    display: block;
+    height: auto;
+    opacity: 1;
+  }
+
+  .main-nav li {
+    display: block;
+  }
+
+  .main-nav li a:link,
+  .main-nav li a:visited {
+    display: block;
+    border: 0;
+    padding: 10px 0;
+    font-size: 100%;
+  }
+
+
+  footer .footer-logo,
+	footer .footer-text {
+		text-align: center;
+		margin: unset;
+	}
+}
+
+/* Small phones: from 0 to 480px */
+@media only screen and (max-width: 480px) {
+	section.info p {
+    font-size: 15px;
+  }
+  section.info .text-group {
+    padding: 31% 15%;
+	}
+	.grid-container-of-2 {
+		grid-template-columns: 100%;
+	}
+
+	.grid-container-of-3 {
+		grid-template-columns: 100;
+	}
+	.left-btn,
+	.right-btn {
+		font-size: 17px;
+    padding: 15px 15px;
+	}
+	section.resume h1 {
+    font-size: 140%;
+  }
+}
+
+@media only screen and (max-width: 330px) {
+ 
+}

@@ -1,0 +1,417 @@
+* {
+	font-family: 'Averia Serif Libre', cursive;
+	color: white;
+}
+
+body {
+	background-color: #344241;
+}
+
+.bodyWarper {
+	margin: 1% auto;
+}
+
+header {
+	text-align: center;
+}
+
+hr.header-split {
+	height: 10px;
+	background: url(image/stopline.jpg) repeat-x 0 0;
+  border: 0;
+}
+
+section {
+	width: 100%;
+	padding: 5% 0;
+}
+
+span {
+	color: #fef203;
+}
+
+h3 {
+	font-weight: 300;
+  text-transform: uppercase;
+  text-align: center;
+  word-spacing: 2px;
+  letter-spacing: 1px;
+  font-size: 40px;
+  margin-bottom: 5%;
+}
+
+h3:after {
+  content: '';
+  display: block;
+  height: 3px;
+  background-image: url(image/stopline.jpg);
+  width: 300px;
+  margin: 30px auto;
+}
+
+
+
+
+/*--- NAVBAR ---*/
+.navbar {
+	text-transform: uppercase; 
+}
+
+.navbar ul{
+	padding: unset;
+}
+
+.navbar li {
+	list-style: none;
+	display: inline-block;
+	margin: 0 3%;
+}
+
+.navbar li a {
+	text-decoration: none;
+}
+
+.navbar li a:hover{
+	cursor: pointer;
+}
+
+.mobile-nav-icon {
+  display: none;
+  cursor: pointer;
+}
+
+.mobile-nav-icon i {
+  color: #fff;
+  font-size: 33px;
+}
+
+/* navbar-show */
+.navbar-show {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fffffffa;
+  box-shadow: 0 2px 2px #efefef;
+  z-index: 9999;
+}
+
+.navbar-show .main-nav { 
+  /*margin-top: 18px; */
+}
+
+.navbar-show .main-nav li a {
+  padding: 10px 0;
+  color: #555;
+}
+
+
+/*---- GRID ---*/
+.grid-container-of-2 {
+	display: grid;
+	grid-template-columns: 40% 60%
+}
+
+.grid-container-of-2-portifolio {
+	display: grid;
+	grid-row-gap: 10px;
+	grid-template-columns: 40% 60%;
+	text-align:left;
+	padding: 0% 7%;
+}
+
+.grid-container-of-3 {
+	display: grid;
+	grid-template-columns: 33.3% 33.3% 33.3%;
+	padding: 0% 5%;
+}
+
+
+
+/*--- SECTION INFO ---*/
+section.info {
+	background-image: linear-gradient(rgba(52, 66, 65, 0.7), rgba(52, 66, 65, 0.7)), url(image/IMG_8422.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 80vh;
+  background-attachment: fixed;
+}
+
+section.info span{
+	font-family: 'Alfa Slab One', cursive;
+}
+
+section.info .text-group {
+	padding: 5% 25%;
+}
+
+section.info h2 {
+	font-family: 'Alfa Slab One', cursive;
+	font-size: 50px;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 14px;
+}
+
+section.info p {
+	font-size: 20px;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	color: #fef203;
+}
+
+
+
+/*--- SECTION RESUME ---*/
+section.resume {
+	position: relative;
+	background-color: #405250;
+}
+
+
+section.resume h1 {
+	font-size: 180%; 
+	letter-spacing: 8px; 
+	text-transform: uppercase; 
+	font-weight: normal;
+}
+
+section.resume .grid-container-of-2 .skill-title {
+	text-align: center;
+	padding: 8% 0;
+}
+
+section.resume .content {
+	padding-right: 13%;
+}
+
+section.resume .object {
+	position: relative;
+	height: 300px;
+	perspective: 1000px;
+}
+
+section.resume .carousel {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	transform: translateZ(-712px);
+	transform-style: preserve-3d;
+	transition: transform 1.2s;
+}
+
+section.resume .cell {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	color: white;
+	background: #405250;
+}
+
+section.resume .cell:nth-child(1) { 
+	transform: rotateY(0deg) translateZ(712px); 
+}
+section.resume .cell:nth-child(2) { 
+	transform: rotateY(90deg) translateZ(712px); 
+}
+section.resume .cell:nth-child(3) { 
+	transform: rotateY(180deg) translateZ(712px); 
+}
+section.resume .cell:nth-child(4) { 
+	transform: rotateY(270deg) translateZ(712px); 
+}
+
+section.resume .resume-download a {
+	text-decoration: none;
+}
+
+section.resume #resume-btn {
+	background-color: transparent;
+  border:1px solid white;
+  padding: 1% 3%;
+  font-size: 25px;
+  box-shadow: #000000bf 10px 10px 51px 0px;
+  transition: all 0.5s;
+}
+
+section.resume #resume-btn:hover {
+	transform: scale(1.2);
+  background-color: #fef203; 
+  color: #405250;
+  border: none;
+  cursor: pointer;
+}
+
+.left-btn,
+.right-btn {
+	position: absolute;
+  top: 50%;
+  transform: translate(0%, -50%);
+  -ms-transform: translate(0%, -50%);
+  background-color: #55555545;
+  color: white;
+  font-size: 25px;
+  padding: 20px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.left-btn {
+  left: 0%;
+ }
+
+.right-btn {
+  right: 0%;
+}
+
+
+/*--- SECTION PORTIFOLIO ---*/
+section.portifolio {
+	text-align: center;
+}
+
+section.portifolio .pofolio-img {
+	position: relative;
+  width: 100%;
+  margin: 0;
+  overflow: hidden;
+  background-color: #000000;
+}
+
+section.portifolio .pofolio-img img {
+  width: 100%;
+  height: auto;
+  opacity: 0.7;
+  transform: scale(1.15);
+  transition: opacity 0.5s, transform 0.5s;
+}
+
+section.portifolio .pofolio-description {
+	text-align:center;
+	padding:1% 1%;
+	position: absolute;
+  top: 80%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #0a0a0acc;
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity .2s, visibility .2s;
+}
+
+section.portifolio .pofolio-img img:hover {
+  opacity: 1;
+  transform: scale(1.03);
+}
+
+.pofolio-img:hover .pofolio-description {
+	visibility: visible;
+  opacity: 1;
+}
+
+
+section.portifolio .portifolio-intro {
+	padding: 0 5%;
+	margin-bottom: 3%;
+}
+
+.a-link {
+	text-align:center;
+}
+
+
+
+/*--- SECTION CONTACT ---*/
+section.contact {
+	background-color:#405250;	 
+	text-align: center;
+}
+
+section.contact .social-links {
+  margin-top: 2%;
+}
+
+section.contact .social-links li {
+  margin-right: 10px;
+  display: inline-block;
+  list-style: none;
+  font-size: 40px;
+}
+
+section.contact .social-links li a:link,
+section.contact .social-links li a:visited {
+  color: gray;
+  text-decoration: none;
+  border: 0;
+}
+
+section.contact .logo-facebook:hover {
+  color: #3b5998;
+}
+
+section.contact .logo-github:hover {
+  color: black;
+}
+
+section.contact .logo-googleplus:hover {
+  color: #dd4b39;
+}
+
+section.contact .logo-instagram:hover {
+  color: #8e29afde;
+}
+
+
+input[type=text]{
+  width: 50%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  color: black;
+  font-size: 18px;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+section.contact .submitbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 52%;
+  opacity: 0.9;
+  font-size: 18px;
+  outline: none;
+}
+
+section.contact .submitbtn:hover {
+  opacity: 1;
+}
+
+
+/*--- FOORER ---*/
+footer .footer-logo {
+	text-align: right; 
+	margin-right: 3%;
+}
+
+footer .footer-text {
+	text-align: left; 
+	margin-left: 3%;
+}
+
+
+
+

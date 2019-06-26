@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>IamShiyun</title>
+	<link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Averia+Serif+Libre:400,700" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+	<link rel="stylesheet" type="text/css" href="portfolio.css">
+	<link rel="stylesheet" type="text/css" href="responsivePortfolio.css">
+</head>
+<body>
+	<div class="bodyWarper">
+		<header>
+			<img id="logo" src="image/logo_yellow.png" width="100px">
+			<div class="grid-header-of-2">
+				<div class="navbar">
+	        <ul class="main-nav">
+	        	<li><a onclick="goToHomepage()">home</a></li>
+	          <li><a href="#about">about me</a></li>
+	          <li><a href="#portifolio">portfolio</a></li>
+	          <li><a href="#contact">contact me</a></li>
+	        </ul>
+	    	</div>
+	    	<div>
+	        <a class="mobile-nav-icon js--nav-icon"><i class="fas fa-bars"></i></a>
+	    	</div>
+	    </div>
+    	<hr class="header-split">
+		</header>
+
+		<section class="info">
+			<div class="text-group">
+					<h2>I<span>'</span>m </h2>
+					<h2>Sh<span>i</span>yun</h2>
+					<h2>Zhang<span>.</span></h2>
+					<p> Full Stack Developer</p>
+			</div>
+		</section>
+ 		
+ 		<a name="about"></a>
+	 	<section class="resume">
+	 		<h3>Ab<span>o</span>ut M<span>e</span></h3>
+	    <div class="object">
+	      <div class="carousel">
+	        <div class="cell">
+	        	<div class="grid-container-of-2">
+							<div class="text-group skill-title">
+								<h1>&#8544;<span>.</span> Professional </br> Skills</h1>
+							</div>
+							<div class="content">
+								<div class="text-group">
+									<h2>Programming <span>:</span> </h2> 
+									<p>JAVA, JavaScript, HTML5, CSS, C++, Python, Node.js, JQuery, React.js, Bootstrap, Express, GraphCMS</p>
+									<h2>Technologies <span>:</span> </h2>
+									<p>GRPC, Docker, Git, AWS, Agile Methodology, Jira, SOAP, REST, Apache Tomcat, Apache2</p>
+									<h2>Databases <span>:</span> </h2>
+									<p>MySQL, PostgreSQL, MongoDB</p>
+								</div>
+							</div>
+						</div>
+	        </div>
+	        <div class="cell">
+	        	<div class="grid-container-of-2">
+							<div class="text-group skill-title">
+								<h1>&#8545;<span>.</span> Working </br> Experience</h1>
+							</div>
+							<div class="content">
+								<div class="text-group">
+									<h2>Full Stack Developer</h2> 
+									<p>June 2018 <span>–</span> September 2018</p>
+									<p><span>&#9830;</span> Built and improved the company's Inventory Management System using Node.js and express framework in order to improve staff productivity.</p>
+									<p><span>&#9830;</span> Built images upload system including images resize, auto-rotate and images preview with JavaScript and Amazon S3 API.</p>
+									<p><span>&#9830;</span> Created company responsive brand dashboard website using HTML, CSS and React.js in order to analyze bland performance and attract brand partners.</p>
+								</div>
+							</div>
+						</div>
+	        </div>
+	        <div class="cell">
+	        	<div class="grid-container-of-2">
+							<div class="text-group skill-title">
+								<h1>&#8546;<span>.</span> Personal </br> Links</h1>
+							</div>
+							<div class="content">
+								<div class="text-group link">
+									<h2>Github <span>:</span> <a href="https://github.com/szhang5" target="_blank">https://github.com/szhang5</a></h2> 
+									<h2>CodePan <span>:</span> <a href="https://codepen.io/Shiyun" target="_blank">https://codepen.io/Shiyun</a></h2>
+									<h2>Personal Blog <span>:</span> <a href="http://www.supershiyun.xyz" target="_blank">http://www.supershiyun.xyz</a></h2>
+									<h2>Linkedin <span>:</span> <a href="https://www.linkedin.com/in/shiyunzhangzoey" target="_blank">https://www.linkedin.com/in/shiyunzhangzoey</a></h2>
+								</div>
+							</div>
+						</div>
+	        </div>
+	        <div class="cell" style="text-align: center;">
+						<div class="text-group resume-download">
+							<h1 id="download">Click To Download Resume<span>!</span></h1>
+							<a id="resume-btn" href="https://drive.google.com/file/d/1xArFZBYBhl5CZkUAH8bJcfheHJJp7mdw/view?usp=sharing" target="_blank">Download Resume</a>
+						</div>
+	        </div>
+	    	</div>
+	  	</div>
+		  <button class="left-btn">&#10094;</button>
+			<button class="right-btn">&#10095;</button>
+		</section>
+
+		<a name="portifolio"></a>
+		<section class="portifolio">
+			<h3>P<span>o</span>rtif<span>o</span>li<span>o</span></h3>
+	    <div class="grid-container-of-3">
+	    	<div class="pofolio-img">
+	          <img src="image/YelpCamp.png" onclick="goToPortifolio()" alt="Simple italian pizza with cherry tomatoes">
+	          <p class="pofolio-description">YelpCamp Website</p>
+	      </div>
+	      <div class="pofolio-img">
+	        <img src="image/CSS-3D-Carousel.png" onclick="goToPortifolio()" alt="Korean bibimbap with egg and vegetables">
+	        <p class="pofolio-description">CSS 3D Carousel</p>
+	      </div>
+	      <div class="pofolio-img">
+	          <img src="image/Maze.png" onclick="goToPortifolio()" alt="Simple italian pizza with cherry tomatoes">
+	          <p class="pofolio-description">Maze Generator</p>
+	      </div>
+	    </div>
+	    <div class="grid-container-of-3">
+	      <div class="pofolio-img">
+	        <img src="image/Tictactoe.png" onclick="goToPortifolio()" alt="Korean bibimbap with egg and vegetables">
+	        <p class="pofolio-description">Tictactoe Mobile Game</p>
+	      </div>
+	      <div class="pofolio-img">
+	        <img src="image/drawingboard.png" onclick="goToPortifolio()" alt="Simple italian pizza with cherry tomatoes">
+	        <p class="pofolio-description">Drawing Board</p>
+	      </div>
+	      <div class="pofolio-img">
+	        <img src="image/pingponggame.png" onclick="goToPortifolio()" alt="Simple italian pizza with cherry tomatoes">
+	        <p class="pofolio-description">P2P-PingPong Game</p>
+	      </div>
+	    </div>
+	  </section>
+
+	  <a name="contact"></a>
+	  <section class="contact">
+	  	<h3>Contact Me</h3>
+	  	<div>
+	  		 <div class="container">
+			    <input type="text" placeholder="Name" name="name" required>
+
+			    <input type="text" placeholder="Email" name="email" required>
+
+			    <input type="text" placeholder="Message" name=message" required>
+
+			    <button type="submit" class="submitbtn">Send</button>
+			  </div>
+		  </div>
+	  	<div class="social-links">
+        <li><a href="https://www.facebook.com/shiyunzhang.zoey" target="_blank"><i class="fab fa-facebook-square logo-facebook"></i></a></li>
+        <li><a href="https://github.com/szhang5" target="_blank"><i class="fab fa-github logo-github"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/shiyunzhangzoey" target="_blank"><i class="fab fa-google-plus-square logo-googleplus"></i></a></li>
+        <li><a href="https://www.instagram.com/z.shiyun/" target="_blank"><i class="fab fa-instagram logo-instagram"></i></ion-icon></a></li>
+      </div>
+	  </section>
+
+		<footer>
+			<div class="grid-container-of-2">
+				<div class="footer-logo">
+					<img id="logo" src="image/logo_yellow.png" width="40px">
+				</div>
+				<div class="footer-text">
+					<p> &copy; 2019 by Shiyun Zhang.</p>
+				</div>
+	    </div>
+	  </footer>
+	</div>
+	<script type="text/javascript" src="portfolio.js"></script>
+</body>
+</html>
